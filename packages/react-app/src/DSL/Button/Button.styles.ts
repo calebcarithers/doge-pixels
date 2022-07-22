@@ -15,7 +15,10 @@ const ButtonStyle = {
       color: lightOrDark(colorMode, "black", "white"),
       textDecorationColor: lightOrDark(colorMode, "black", "white"),
       borderWidth: "1px",
-      cursor: "pointer"
+      cursor: "pointer",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center"
     },
     drop: {
       zIndex: -1,
@@ -93,6 +96,9 @@ const ButtonStyle = {
         },
         _focus: {
           boxShadow: "none"
+        },
+        _disabled: {
+          color: lightOrDark(colorMode, "#d6ceb6", "#482e84")
         }
       },
       drop: {
